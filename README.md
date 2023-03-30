@@ -25,3 +25,5 @@ Credits:
 Sasha Slastenin
 Andrei "vb2005" Nikolin
 Sergei "rew" Permyakov
+
+ペルミャコフ・セルゲイ式のTrancity版の非公式パッチ
