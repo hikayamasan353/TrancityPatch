@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Trancity_Dev\\Trancity.csproj": {}
+    "E:\\Trancity_Dev2\\Trancity.csproj": {}
   },
   "projects": {
-    "E:\\Trancity_Dev\\Trancity.csproj": {
+    "E:\\Trancity_Dev2\\Trancity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Trancity_Dev\\Trancity.csproj",
+        "projectUniqueName": "E:\\Trancity_Dev2\\Trancity.csproj",
         "projectName": "Trancity",
-        "projectPath": "E:\\Trancity_Dev\\Trancity.csproj",
+        "projectPath": "E:\\Trancity_Dev2\\Trancity.csproj",
         "packagesPath": "C:\\Users\\Hikaru\\.nuget\\packages\\",
-        "outputPath": "E:\\Trancity_Dev\\obj\\",
+        "outputPath": "E:\\Trancity_Dev2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
