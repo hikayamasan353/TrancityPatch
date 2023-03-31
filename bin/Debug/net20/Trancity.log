@@ -4,27 +4,27 @@ Uses DotR v0.0.0.4 (build date: 23.07.2022, 23:59:16)
 Running on: Microsoft Windows NT 6.2.9200.0
 Executable path: E:\Trancity_Dev\bin\Debug\net20
 Date: 31.03.2023
-4:26:03: ModelLoader - Bounding spheres not loaded for ÀË¿«-6212
-4:26:03: ModelLoader - Bounding spheres not loaded for œ¿«-32051
-4:26:03: ModelLoader - Bounding spheres not loaded for À¬—-86 “œ1
-4:26:03: ModelLoader - Bounding spheres not loaded for ÀË¿« 5256.25II
-4:26:03: ModelLoader - Bounding spheres not loaded for ÀÃ-68Ã —œ· “œ2
-4:26:03: ModelLoader - Bounding spheres not loaded for ÀÃ-68Ã —œ· “œ2 —Ã≈
-4:26:03: ModelLoader - Bounding spheres not loaded for œ¿«-4234
-4:26:03: LoadCitySimple - Loading E:\Games\Trancity_0.6.4.3\Cities\ ËÂ‚ ‰ÂÏÓ.city
-4:26:03: LoadCitySimple - Success!
-4:26:07: DirectX9 - Direct3D created. Availabale devices (adapters):
-4:26:07: 0 - NVIDIA GeForce GTX 1050 with driver version 30.0.14.9729
-4:26:07: DirectX9 - CreateFlags = HardwareVertexProcessing
-4:26:07: DirectX9 - Uses adapter with ID 0
-4:26:07: DirectX9 - Uses windowed mode
-4:26:08: DirectX9 - Device created successfully
-4:26:08: Engine - XAudio2 device created successfully
-4:26:08: XAudio2 - Available devices:
-4:26:08: 0 - ƒËÌ‡ÏËÍË (Realtek High Definition Audio) with role GlobalDefaultDevice
-4:26:08: XAudio2 - Uses device with id = 0
-4:26:08: LoadCity - Loading E:\Games\Trancity_0.6.4.3\Cities\ ËÂ‚ ‰ÂÏÓ.city
-4:26:09: LoadCity - Old signals construction found!
-4:26:09: LoadCity - Success!
-4:26:16:  - Sound enabled
-4:26:16:  - Game started
+17:03:54: ModelLoader - Bounding spheres not loaded for ÀË¿«-6212
+17:03:54: ModelLoader - Bounding spheres not loaded for œ¿«-32051
+17:03:54: ModelLoader - Bounding spheres not loaded for À¬—-86 “œ1
+17:03:54: ModelLoader - Bounding spheres not loaded for ÀË¿« 5256.25II
+17:03:54: ModelLoader - Bounding spheres not loaded for ÀÃ-68Ã —œ· “œ2
+17:03:54: ModelLoader - Bounding spheres not loaded for ÀÃ-68Ã —œ· “œ2 —Ã≈
+17:03:54: ModelLoader - Bounding spheres not loaded for œ¿«-4234
+17:03:54: LoadCitySimple - Loading E:\Games\Trancity_0.6.4.3\Cities\ ËÂ‚ ‰ÂÏÓ.city
+17:03:55: LoadCitySimple - Success!
+17:04:04: DirectX9 - Direct3D created. Availabale devices (adapters):
+17:04:04: 0 - NVIDIA GeForce GTX 1050 with driver version 30.0.14.9729
+17:04:04: DirectX9 - CreateFlags = HardwareVertexProcessing
+17:04:04: DirectX9 - Uses adapter with ID 0
+17:04:04: DirectX9 - Uses windowed mode
+17:04:04: DirectX9 - Device created successfully
+17:04:04: Engine - XAudio2 device created successfully
+17:04:04: XAudio2 - Available devices:
+17:04:04: 0 - ƒËÌ‡ÏËÍË (Realtek High Definition Audio) with role GlobalDefaultDevice
+17:04:04: XAudio2 - Uses device with id = 0
+17:04:05: LoadCity - Loading E:\Games\Trancity_0.6.4.3\Cities\ ËÂ‚ ‰ÂÏÓ.city
+17:04:07: LoadCity - Old signals construction found!
+17:04:08: LoadCity - Success!
+17:04:19:  - Sound enabled
+17:04:19:  - Game started

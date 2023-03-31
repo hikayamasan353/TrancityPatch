@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
 using Engine;
+using SlimDX;
 
 namespace Common
 {

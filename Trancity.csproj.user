@@ -8,6 +8,15 @@
     <Compile Update="Common\NumericBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="DotR\Controls\RenderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DotR\Controls\RenderPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="DotR\ExceptionHandlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Trancity\ComputeTimeDialog.cs">
       <SubType>Form</SubType>
     </Compile>

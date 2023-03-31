@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <AssemblyName>Trancity</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
@@ -16,11 +16,16 @@
     <RootNamespace />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="DotR\**" />
+    <EmbeddedResource Remove="DotR\**" />
+    <None Remove="DotR\**" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Remove="Trancity.Editor.resx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="DotR">
-      <HintPath>..\Games\Trancity_0.6.4.3\DotR.dll</HintPath>
+      <HintPath>DotR\bin\Debug\DotR.dll</HintPath>
     </Reference>
     <Reference Include="SlimDX">
       <HintPath>..\Games\Trancity_0.6.4.3\SlimDX.dll</HintPath>
