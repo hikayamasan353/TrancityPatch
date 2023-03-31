@@ -1,4 +1,5 @@
-namespace SlimDX
+using SlimDX;
+namespace Common
 {
 	public class MyMatrix
 	{

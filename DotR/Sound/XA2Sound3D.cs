@@ -105,6 +105,38 @@ namespace Engine.Sound
                 _soundVoice.Stop();
         }
 
+        public void Play(bool loop)
+        {
+            if (_soundVoice != null)
+            {
+                if (!loop)
+                {
+                    _soundVoice.Play();
+                    _soundVoice.ExitLoop();
+                }
+                else
+                {
+                    _soundVoice.Play();
+                }
+            }
+        }
+
+        public void PlayLoop()
+        {
+            _soundVoice.Play();
+        }
+
+        public void PlayOnce()
+        {
+            _soundVoice.Play();
+            _soundVoice.ExitLoop();
+        }
+
+        public void ExitLoop()
+        {
+            _soundVoice.ExitLoop();
+        }
+
         public float Frequency
         {
             get

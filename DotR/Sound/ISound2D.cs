@@ -14,12 +14,21 @@ namespace Engine.Sound
     /// </summary>
     public interface ISound2D
     {
+
         void Play();
+        void Play(bool loop);
+
+        void PlayLoop();
+        void PlayOnce();
+
 
         void Stop();
+        void ExitLoop();
 
         float Frequency { get; set; }
 
         float Volume { get; set; }
     }
+
+
 }

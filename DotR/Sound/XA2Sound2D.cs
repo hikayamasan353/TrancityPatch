@@ -8,6 +8,7 @@
  */
 using SlimDX.Multimedia;
 using SlimDX.XAudio2;
+using Engine;
 
 namespace Engine.Sound
 {
@@ -73,6 +74,35 @@ namespace Engine.Sound
         public void Stop()
         {
             _voice.Stop();
+        }
+
+        public void Play(bool loop)
+        {
+            if(!loop)
+            {
+                _voice.Start();
+                _voice.ExitLoop();
+            }
+            else
+            {
+                _voice.Start();
+            }
+        }
+
+        public void PlayLoop()
+        {
+            _voice.Start();
+        }
+
+        public void PlayOnce()
+        {
+            _voice.Start();
+            _voice.ExitLoop();
+        }
+
+        public void ExitLoop()
+        {
+            _voice.ExitLoop();
         }
 
         public float Frequency

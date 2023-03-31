@@ -7,6 +7,8 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 
+using SlimDX.XAudio2;
+
 namespace Engine.Sound
 {
     /// <summary>
@@ -15,6 +17,8 @@ namespace Engine.Sound
     /// </summary>
     public interface ISound3D : ISound2D
     {
+
+
         void Update(ref Double3DPoint position/*, ref DoublePoint rotation*/);
     }
 }

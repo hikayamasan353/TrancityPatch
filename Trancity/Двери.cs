@@ -236,15 +236,14 @@ namespace Trancity
                     {
                         //Звук открытия дверей
                         SoundBuffers[1].Stop();
-                        
-                        SoundBuffers[0].Play();
+                        SoundBuffers[0].PlayOnce();
 
                     }
                     else
                     {
                         //Звук закрытия дверей
                         SoundBuffers[0].Stop();
-                        SoundBuffers[1].Play();
+                        SoundBuffers[1].PlayOnce();
 
                     }
 
