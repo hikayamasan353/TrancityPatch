@@ -443,14 +443,32 @@ namespace Trancity
 
 		public void CreateSoundBuffers()
 		{
+            //Создаем звуки системы управления
 			система_управления.CreateSoundBuffers();
+            //Создаем звуки дверей
+
+            for (int i = 0; i < _двери.Length; i++)
+            {
+                _двери[i].transport = this;
+                _двери[i].CreateSoundBuffers();
+            }
+
+
 		}
 
 		public void UpdateSound(Игрок[] игроки, bool игра_активна)
 		{
+            //Если звук включен
 			if (!nosound)
 			{
+                //Обновляем звуки системы управления
 				система_управления.UpdateSound(игроки, игра_активна);
+                //Обновляем звуки дверей
+                foreach(Двери дверь in _двери)
+                {
+                    дверь.UpdateSound(игроки, игра_активна);
+                }
+
 			}
 		}
 

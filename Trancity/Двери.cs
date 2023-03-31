@@ -1,6 +1,7 @@
 using System;
 using Common;
 using Engine;
+using Engine.Sound;
 using SlimDX;
 
 namespace Trancity
@@ -31,19 +32,19 @@ namespace Trancity
 
 		public class Двустворчатые : Двери
 		{
-			public Двустворчатые(MeshObject объект, double x1, double z1, double x2, double z2, double y1, double y2, bool правые, string dir, string filename, double длина, double высота, double ширина)
-			{
-				_pos1 = new Double3DPoint(x1, y1, z1);
-				_pos2 = new Double3DPoint(x2, y2, z2);
-				_правые = правые;
-				_длина = длина;
-				_высота = высота;
-				_ширина = ширина;
-				_объект = объект;
-				_створка = new Дверь(filename, dir);
-			}
+            public Двустворчатые(MeshObject объект, double x1, double z1, double x2, double z2, double y1, double y2, bool правые, string dir, string filename, double длина, double высота, double ширина)
+            {
+                _pos1 = new Double3DPoint(x1, y1, z1);
+                _pos2 = new Double3DPoint(x2, y2, z2);
+                _правые = правые;
+                _длина = длина;
+                _высота = высота;
+                _ширина = ширина;
+                _объект = объект;
+                _створка = new Дверь(filename, dir);
+            }
 
-			public override void Render()
+            public override void Render()
 			{
 				Matrix last_matrix = _объект.last_matrix;
 				float num = (_правые ? (-1f) : 1f);
@@ -67,7 +68,65 @@ namespace Trancity
 				_створка.matrix = matrix3 * matrix4 * last_matrix;
 				_створка.Render();
 			}
-		}
+
+            /// <summary>
+            /// Создаем звук открытия и закрытия дверей
+            /// </summary>
+            public override void CreateSoundBuffers()
+            {
+                //Создаем звуковой буфер
+                SoundBuffers = new ISound3D[2];
+                SoundBuffers[0] = MyXAudio2.Device.CreateEmitter(50f, transport.основная_папка + "dopen.wav"); //Открытие дверей
+                SoundBuffers[1] = MyXAudio2.Device.CreateEmitter(50f, transport.основная_папка + "dclose.wav"); //Закрытие дверей
+                //Громкость звуков
+                SoundBuffers[0].Volume = 0.6f;
+                SoundBuffers[0].Frequency = 0.5f;
+                SoundBuffers[1].Volume = 0.6f;
+                SoundBuffers[1].Frequency = 0.5f;
+
+
+            }
+
+            public override void UpdateSound(Игрок[] игроки, bool игра_активна)
+            {
+                //Обновление звуков
+                //По умолчанию звуки играют постоянно. Ими надо управлять.
+                if (PreUpdateSound(transport, игра_активна))
+                {
+                    //Останавливаем звуки если открыты или закрыты, и не открываются
+                    if(Закрыты||Открыты)
+                    {
+                        foreach (ISound3D buffer in SoundBuffers)
+                            buffer.Stop();
+                    }
+                    else
+                    {
+                        //Если двери открываются
+                        if(открываются)
+                        {
+                            //Звук открытия дверей
+                            SoundBuffers[1].Stop();
+                            SoundBuffers[0].Play();
+                            
+                        }
+                        else
+                        {
+                            //Звук закрытия дверей
+                            SoundBuffers[0].Stop();
+                            SoundBuffers[1].Play();
+
+                        }
+
+
+
+                    }
+
+
+
+                }
+
+            }
+        }
 
 		public class ШарнирноПоворотные : Двери
 		{
@@ -83,7 +142,20 @@ namespace Trancity
 				_створка = new Дверь(filename, dir);
 			}
 
-			public override void Render()
+            /// <summary>
+            /// Создаем звук открытия и закрытия дверей
+            /// </summary>
+            public override void CreateSoundBuffers()
+            {
+                //throw new NotImplementedException();
+                SoundBuffers = new ISound3D[2];
+                SoundBuffers[0] = MyXAudio2.Device.CreateEmitter(50f, "dopen.wav");
+                SoundBuffers[1] = MyXAudio2.Device.CreateEmitter(50f, "dclose.wav");
+
+
+            }
+
+            public override void Render()
 			{
 				Matrix last_matrix = _объект.last_matrix;
 				float num = (_правые ? 1f : (-1f));
@@ -99,7 +171,12 @@ namespace Trancity
 				_створка.matrix = matrix * matrix2 * last_matrix;
 				_створка.Render();
 			}
-		}
+
+            public override void UpdateSound(Игрок[] игроки, bool игра_активна)
+            {
+                //throw new NotImplementedException();
+            }
+        }
 
 		public class Сдвижные : Двери
 		{
@@ -115,7 +192,20 @@ namespace Trancity
 				_створка = new Дверь(filename, dir);
 			}
 
-			public override void Render()
+            /// <summary>
+            /// Создаем звук открытия и закрытия дверей
+            /// </summary>
+            public override void CreateSoundBuffers()
+            {
+                //throw new NotImplementedException();
+                SoundBuffers = new ISound3D[2];
+                SoundBuffers[0] = MyXAudio2.Device.CreateEmitter(50f, "dopen.wav");
+                SoundBuffers[1] = MyXAudio2.Device.CreateEmitter(50f, "dclose.wav");
+
+
+            }
+
+            public override void Render()
 			{
 				Matrix last_matrix = _объект.last_matrix;
 				float num = (_правые ? (-1f) : 1f);
@@ -128,7 +218,12 @@ namespace Trancity
 				_створка.matrix = matrix3 * matrix4 * last_matrix;
 				_створка.Render();
 			}
-		}
+
+            public override void UpdateSound(Игрок[] игроки, bool игра_активна)
+            {
+                //throw new NotImplementedException();
+            }
+        }
 
 		public class CustomDoors : Двери
 		{
@@ -146,7 +241,20 @@ namespace Trancity
 				_створка = new Дверь(filename, dir);
 			}
 
-			public override void Render()
+            /// <summary>
+            /// Создаем звук открытия и закрытия дверей
+            /// </summary>
+            public override void CreateSoundBuffers()
+            {
+                //throw new NotImplementedException();
+                SoundBuffers = new ISound3D[2];
+                SoundBuffers[0] = MyXAudio2.Device.CreateEmitter(50f, "dopen.wav");
+                SoundBuffers[1] = MyXAudio2.Device.CreateEmitter(50f, "dclose.wav");
+
+
+            }
+
+            public override void Render()
 			{
 				Matrix last_matrix = _объект.last_matrix;
 				double num = _состояние * Math.PI / 2.0;
@@ -158,7 +266,12 @@ namespace Trancity
 				_створка.matrix = matrix * matrix2 * last_matrix;
 				_створка.Render();
 			}
-		}
+
+            public override void UpdateSound(Игрок[] игроки, bool игра_активна)
+            {
+                //throw new NotImplementedException();
+            }
+        }
 
 		private Double3DPoint _pos1;
 
@@ -184,7 +297,62 @@ namespace Trancity
 
 		private double _ширина = 0.05;
 
-		public string[] ExtraMeshDirs
+        public Transport transport;
+
+        //Звуки открывания-закрывания дверей
+        protected ISound3D[] SoundBuffers;
+        private bool isPlaying;
+
+        /// <summary>
+        /// Создаем звуки открытия дверей
+        /// </summary>
+        public abstract void CreateSoundBuffers();
+        /// <summary>
+        /// Обновляем звуки открытия дверей
+        /// </summary>
+        /// <param name="игроки"></param>
+        /// <param name="игра_активна"></param>
+        public abstract void UpdateSound(Игрок[] игроки, bool игра_активна);
+
+        protected bool PreUpdateSound(Transport ptransport, bool gameActive)
+        {
+            bool flag = !ptransport.condition;
+            //Если игра активна
+            if (gameActive)
+            {
+                //Если двери открываются или закрываются, но открыты или закрыты не полностью
+                if ((_состояние > 0) && (_состояние < 1))
+                {
+                    isPlaying = true; //Звук проигрывается
+                    //Звуки должны проигрываться.
+                }
+                else
+                {
+                    isPlaying = false; //Звук не проигрывается
+                    //Глушим все звуки
+                    foreach(ISound3D buffer in SoundBuffers)
+                    {
+                        buffer.Stop();
+                    }
+                }
+
+
+            }
+
+            //Если звук проигрывается
+            if (isPlaying)
+            {
+                Double3DPoint position = transport.Координаты3D;
+                ISound3D[] soundBuffers = SoundBuffers;
+                for (int i = 0; i < soundBuffers.Length; i++)
+                {
+                    soundBuffers[i].Update(ref position);
+                }
+            }
+            return isPlaying;
+        }
+
+        public string[] ExtraMeshDirs
 		{
 			set
 			{
