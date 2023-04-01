@@ -1,0 +1,33 @@
+Trancity v0.6.4.4 (x86)
+Build date: 23.07.2022, 23:59:18
+Uses DotR v0.0.0.4 (build date: 02.04.2023, 0:53:44)
+DEBUG: DotR - compiled in this mode
+Running on: Microsoft Windows NT 6.2.9200.0
+Executable path: E:\Trancity_Dev\Trancity\bin\Debug\net20
+Date: 02.04.2023
+0:57:37: ModelLoader - Bounding spheres not loaded for ÀË¿«-6212
+0:57:37: ModelLoader - Bounding spheres not loaded for œ¿«-32051
+0:57:37: ModelLoader - Bounding spheres not loaded for À¬—-86 “œ1
+0:57:37: ModelLoader - Bounding spheres not loaded for ÀË¿« 5256.25II
+0:57:37: ModelLoader - Bounding spheres not loaded for ÀÃ-68Ã —œ· “œ2
+0:57:37: ModelLoader - Bounding spheres not loaded for ÀÃ-68Ã —œ· “œ2 —Ã≈
+0:57:37: ModelLoader - Bounding spheres not loaded for œ¿«-4234
+0:57:37: LoadCitySimple - Loading E:\Games\TrancityPatch 0.6.4.4\Cities\Tram troll test.city
+0:57:37: LoadCitySimple - Success!
+0:57:47: DirectX9 - Direct3D created. Availabale devices (adapters):
+0:57:47: 0 - NVIDIA GeForce GTX 1050 with driver version 30.0.14.9729
+0:57:47: DirectX9 - CreateFlags = HardwareVertexProcessing
+DEBUG: SlimDX - Debug tracking enabled!
+0:57:47: DirectX9 - Uses adapter with ID 0
+0:57:47: DirectX9 - Uses windowed mode
+0:57:48: DirectX9 - Device created successfully
+0:57:48: Engine - XAudio2 device created successfully
+0:57:48: XAudio2 - Available devices:
+0:57:48: 0 - ƒËÌ‡ÏËÍË (Realtek High Definition Audio) with role GlobalDefaultDevice
+0:57:48: XAudio2 - Uses device with id = 0
+0:57:48: LoadCity - Loading E:\Games\TrancityPatch 0.6.4.4\Cities\Tram troll test.city
+0:57:48: LoadCity - Old signals construction found!
+0:57:48: LoadCity - Success!
+DEBUG: SoundManager - Loads E:\Trancity_Dev\Trancity\bin\Debug\net20\Data\Transport\œ‡Á-4234\engine.wav...
+0:57:50:  - Sound enabled
+0:57:50:  - Game started
