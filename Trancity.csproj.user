@@ -11,6 +11,9 @@
     <Compile Update="Trancity\ComputeTimeDialog.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Trancity\ControlSettingsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Trancity\Editor.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -10,3 +10,4 @@ E:\Trancity_Dev\obj\Debug\net20\Trancity.csproj.CopyComplete
 E:\Trancity_Dev\obj\Debug\net20\Trancity.exe
 E:\Trancity_Dev\obj\Debug\net20\Trancity.pdb
 E:\Trancity_Dev\obj\Debug\net20\Trancity.Options.resources
+E:\Trancity_Dev\obj\Debug\net20\Trancity.ControlSettingsDialog.resources
