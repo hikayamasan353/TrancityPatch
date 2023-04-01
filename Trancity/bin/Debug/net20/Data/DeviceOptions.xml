@@ -1,0 +1,11 @@
+<Options>
+  <adapter_id>0</adapter_id>
+  <device_type>0</device_type>
+  <vertexProcessingMode>1</vertexProcessingMode>
+  <vSync>0</vSync>
+  <fullscreen_x>800</fullscreen_x>
+  <fullscreen_y>600</fullscreen_y>
+  <windowed_x>800</windowed_x>
+  <windowed_y>600</windowed_y>
+  <windowed>1</windowed>
+</Options>

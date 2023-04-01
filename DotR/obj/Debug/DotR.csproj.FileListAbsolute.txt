@@ -40,3 +40,8 @@ C:\Users\User\Source\Repos\Trancity\DotR\bin\Debug\DotR.dll
 C:\Users\User\Source\Repos\Trancity\DotR\bin\Debug\DotR.pdb
 C:\Users\User\Source\Repos\Trancity\DotR\obj\Debug\DotR.dll
 C:\Users\User\Source\Repos\Trancity\DotR\obj\Debug\DotR.pdb
+E:\Trancity_Dev_Sounds\DotR\obj\Debug\DotR.csprojAssemblyReference.cache
+E:\Trancity_Dev_Sounds\DotR\obj\Debug\Engine.Controls.RenderForm.resources
+E:\Trancity_Dev_Sounds\DotR\obj\Debug\DotR.csproj.GenerateResource.cache
+E:\Trancity_Dev_Sounds\DotR\obj\Debug\DotR.dll
+E:\Trancity_Dev_Sounds\DotR\obj\Debug\DotR.pdb

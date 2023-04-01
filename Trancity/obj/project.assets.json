@@ -1,0 +1,93 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v2.0": {
+      "DotR/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/DotR.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DotR.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v2.0/win7-x86": {
+      "DotR/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/DotR.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DotR.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DotR/1.0.0": {
+      "type": "project",
+      "path": "../DotR/DotR.csproj",
+      "msbuildProject": "../DotR/DotR.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v2.0": [
+      "DotR >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Hikaru\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Trancity_Dev_Sounds\\Trancity\\Trancity.csproj",
+      "projectName": "Trancity",
+      "projectPath": "E:\\Trancity_Dev_Sounds\\Trancity\\Trancity.csproj",
+      "packagesPath": "C:\\Users\\Hikaru\\.nuget\\packages\\",
+      "outputPath": "E:\\Trancity_Dev_Sounds\\Trancity\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Hikaru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net20"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net20": {
+          "projectReferences": {
+            "E:\\Trancity_Dev_Sounds\\DotR\\DotR.csproj": {
+              "projectPath": "E:\\Trancity_Dev_Sounds\\DotR\\DotR.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net20": {
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win7-x86": {
+        "#import": []
+      }
+    }
+  }
+}
