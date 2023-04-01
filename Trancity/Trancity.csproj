@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Trancity</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net20</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Libs\**" />
+    <EmbeddedResource Remove="Libs\**" />
+    <None Remove="Libs\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Trancity.Editor.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotR\DotR.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="SlimDX">
+      <HintPath>C:\Program Files (x86)\SlimDX SDK (January 2012)\Bin\net20\x86\SlimDX.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+</Project>

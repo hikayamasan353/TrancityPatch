@@ -1,0 +1,16 @@
+Trancity v0.6.4.4 (x86)
+Build date: 23.07.2022, 23:59:18
+Uses DotR v0.0.0.4 (build date: 01.04.2023, 18:53:48)
+DEBUG: DotR - compiled in this mode
+Running on: Microsoft Windows NT 6.2.9200.0
+Executable path: E:\Trancity_Dev4\Trancity\bin\Debug\net20
+Date: 02.04.2023
+0:31:57: ModelLoader - Bounding spheres not loaded for ÀË¿«-6212
+0:31:57: ModelLoader - Bounding spheres not loaded for œ¿«-32051
+0:31:57: ModelLoader - Bounding spheres not loaded for À¬—-86 “œ1
+0:31:57: ModelLoader - Bounding spheres not loaded for ÀË¿« 5256.25II
+0:31:57: ModelLoader - Bounding spheres not loaded for ÀÃ-68Ã —œ· “œ2
+0:31:57: ModelLoader - Bounding spheres not loaded for ÀÃ-68Ã —œ· “œ2 —Ã≈
+0:31:57: ModelLoader - Bounding spheres not loaded for œ¿«-4234
+0:31:57: LoadCitySimple - Loading E:\Games\TrancityPatch 0.6.4.4\Cities\Tram troll test.city
+0:31:57: LoadCitySimple - Success!
